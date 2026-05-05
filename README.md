@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# BOLDNOOK — Headless WordPress Fashion Platform
 
-## Getting Started
+Premium fashion destination for Nigeria. Built with Next.js 15, TypeScript, and Vanilla CSS.
 
-First, run the development server:
+## 🚀 Getting Started
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1.  **Clone & Install**:
+    ```bash
+    git clone https://github.com/gosmartops/boldnook.git
+    cd boldnook
+    npm install
+    ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2.  **Environment Variables**:
+    The project is currently connected to a **Live WordPress Backend** on TasteWP.
+    
+    Check `.env.local`:
+    ```bash
+    WORDPRESS_API_URL="https://stuffhen.s3-tastewp.com/graphql"
+    ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3.  **Live WordPress Admin**:
+    - **URL**: [https://stuffhen.s3-tastewp.com/wp-admin](https://stuffhen.s3-tastewp.com/wp-admin)
+    - **User**: `admin`
+    - **Pass**: `aa76OHb7Z7E`
+    
+    *Note: This is a temporary instance for development.*
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3.  **Run Development Server**:
+    ```bash
+    npm run dev
+    ```
 
-## Learn More
+## 🔌 Transitioning to Live WordPress
 
-To learn more about Next.js, take a look at the following resources:
+When you are ready to connect a real WordPress site:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1.  **WordPress Setup**:
+    - Install the [WPGraphQL](https://wordpress.org/plugins/wp-graphql/) plugin.
+    - Install [WooCommerce](https://woocommerce.com/) (optional, if selling products).
+    - Install [WPGraphQL for WooCommerce](https://wordpress.org/plugins/wp-graphql-woocommerce/).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2.  **Update Endpoint**:
+    Change `WORDPRESS_API_URL` in your Vercel settings or `.env.local`:
+    ```bash
+    WORDPRESS_API_URL="https://your-live-wp-site.com/graphql"
+    ```
 
-## Deploy on Vercel
+3.  **Authentication**:
+    If your endpoint requires authentication for certain queries, add `WORDPRESS_AUTH_REFRESH_TOKEN` to your environment variables.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🎨 Design System
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Typography**: Bebas Neue (Headlines), DM Sans (Body).
+- **Styling**: Vanilla CSS with a custom utility system in `src/app/globals.css`.
+- **Mock Data**: Pre-populated in `src/lib/mock-data.ts` based on brand copy.
+
+## 📦 Project Structure
+
+- `src/app`: App Router pages and API routes.
+- `src/components`: Reusable UI components (ProductCard, StyleFeed, etc.).
+- `src/lib`: API clients and data utilities.
+- `public`: Static assets and brand imagery.
+
+---
+© 2026 Boldnook Ltd. Made in Nigeria.
