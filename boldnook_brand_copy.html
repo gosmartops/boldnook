@@ -1,0 +1,381 @@
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500&display=swap');
+  .bn-root { font-family: 'DM Sans', sans-serif; padding: 1.5rem 0; color: var(--color-text-primary); }
+  .bn-logo { font-family: 'Bebas Neue', sans-serif; font-size: 48px; letter-spacing: 4px; color: var(--color-text-primary); margin: 0 0 4px; }
+  .bn-tagline { font-size: 13px; letter-spacing: 6px; text-transform: uppercase; color: var(--color-text-secondary); margin: 0 0 2rem; }
+  .bn-badge { display: inline-block; font-size: 10px; letter-spacing: 3px; text-transform: uppercase; background: var(--color-text-primary); color: var(--color-background-primary); padding: 3px 10px; border-radius: 2px; margin-bottom: 1.5rem; }
+  .bn-section { margin-bottom: 2.5rem; border-top: 0.5px solid var(--color-border-tertiary); padding-top: 1.5rem; }
+  .bn-section-label { font-size: 10px; letter-spacing: 4px; text-transform: uppercase; color: var(--color-text-secondary); margin: 0 0 0.75rem; }
+  .bn-section-title { font-family: 'Bebas Neue', sans-serif; font-size: 22px; letter-spacing: 2px; margin: 0 0 0.75rem; }
+  .bn-body { font-size: 14px; line-height: 1.8; color: var(--color-text-secondary); margin: 0 0 1rem; }
+  .bn-highlight { color: var(--color-text-primary); font-weight: 500; }
+  .bn-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-top: 1rem; }
+  .bn-card { background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 1rem; }
+  .bn-card-title { font-size: 12px; letter-spacing: 2px; text-transform: uppercase; font-weight: 500; margin: 0 0 6px; }
+  .bn-card-body { font-size: 13px; color: var(--color-text-secondary); line-height: 1.6; margin: 0; }
+  .bn-nav-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 8px; margin-top: 1rem; }
+  .bn-nav-item { background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 10px 14px; font-size: 13px; font-weight: 500; }
+  .bn-sub-list { margin: 6px 0 0; padding: 0; list-style: none; }
+  .bn-sub-list li { font-size: 11px; color: var(--color-text-secondary); padding: 2px 0; }
+  .bn-cta-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 1rem; }
+  .bn-cta { font-size: 12px; letter-spacing: 2px; text-transform: uppercase; padding: 8px 16px; border: 0.5px solid var(--color-border-secondary); border-radius: var(--border-radius-md); background: transparent; color: var(--color-text-primary); cursor: pointer; }
+  .bn-cta.solid { background: var(--color-text-primary); color: var(--color-background-primary); border-color: var(--color-text-primary); }
+  .bn-divider { height: 0.5px; background: var(--color-border-tertiary); margin: 0.5rem 0 1.5rem; }
+  .bn-copy-block { border-left: 2px solid var(--color-border-secondary); padding-left: 1rem; margin: 1rem 0; }
+  .bn-copy-block p { font-size: 14px; line-height: 1.9; margin: 0; color: var(--color-text-secondary); }
+</style>
+
+<div class="bn-root">
+  <div class="bn-logo">BOLDNOOK</div>
+  <p class="bn-tagline">Fashion. Delivered. Nigerian.</p>
+  <span class="bn-badge">Brand Copy Document — v1.0</span>
+
+  <div class="bn-section">
+    <p class="bn-section-label">Brand Identity</p>
+    <p class="bn-section-title">Who We Are</p>
+    <div class="bn-copy-block">
+      <p>Boldnook is Nigeria's fashion destination. We bring you hundreds of labels — international and homegrown — in one place, with sizing that actually fits, payments that make sense, and delivery that doesn't stress you. Whatever your vibe, whatever the occasion — Boldnook has you.</p>
+    </div>
+    <div class="bn-grid">
+      <div class="bn-card">
+        <p class="bn-card-title">Mission</p>
+        <p class="bn-card-body">Make great fashion accessible to every Nigerian — from Surulere to Sambisa Road.</p>
+      </div>
+      <div class="bn-card">
+        <p class="bn-card-title">Tone of Voice</p>
+        <p class="bn-card-body">Confident. Naija. Direct. No shakara — just fire fashion and honest prices.</p>
+      </div>
+      <div class="bn-card">
+        <p class="bn-card-title">Positioning</p>
+        <p class="bn-card-body">Nigeria's answer to ASOS — but built for us, by us, with the full Nigerian context.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="bn-section">
+    <p class="bn-section-label">Sitewide Copy</p>
+    <p class="bn-section-title">Global UI Text</p>
+    <div class="bn-grid">
+      <div class="bn-card">
+        <p class="bn-card-title">Homepage Headline</p>
+        <p class="bn-card-body">"Dress how you move."</p>
+      </div>
+      <div class="bn-card">
+        <p class="bn-card-title">Sub-headline</p>
+        <p class="bn-card-body">"Thousands of styles. Delivered to your door. Pay with what you know."</p>
+      </div>
+      <div class="bn-card">
+        <p class="bn-card-title">Hero CTA</p>
+        <p class="bn-card-body">"Shop New In" / "Explore Brands" / "Find Your Vibe"</p>
+      </div>
+      <div class="bn-card">
+        <p class="bn-card-title">App Download Banner</p>
+        <p class="bn-card-body">"Boldnook in your pocket. Download the app — shop on the go, track your order, get exclusive app drops."</p>
+      </div>
+      <div class="bn-card">
+        <p class="bn-card-title">Trust Strip</p>
+        <p class="bn-card-body">"Free returns · Pay with Paystack · Delivered nationwide · 1,000+ brands"</p>
+      </div>
+      <div class="bn-card">
+        <p class="bn-card-title">Search Placeholder</p>
+        <p class="bn-card-body">"What are you looking for today?"</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="bn-section">
+    <p class="bn-section-label">Navigation Taxonomy</p>
+    <p class="bn-section-title">Main Nav — Women</p>
+    <div class="bn-nav-grid">
+      <div class="bn-nav-item">New In
+        <ul class="bn-sub-list">
+          <li>New Today</li><li>Selling Fast</li><li>Clothing</li><li>Shoes</li><li>Accessories</li><li>Beauty</li>
+        </ul>
+      </div>
+      <div class="bn-nav-item">Clothing
+        <ul class="bn-sub-list">
+          <li>Tops & Blouses</li><li>Dresses</li><li>Skirts</li><li>Trousers</li><li>Jumpsuits</li><li>Co-ords</li><li>Asoebi & Occasion</li><li>Lingerie</li>
+        </ul>
+      </div>
+      <div class="bn-nav-item">Shoes
+        <ul class="bn-sub-list">
+          <li>Trainers</li><li>Heels</li><li>Sandals</li><li>Flat Shoes</li><li>Boots</li>
+        </ul>
+      </div>
+      <div class="bn-nav-item">Accessories
+        <ul class="bn-sub-list">
+          <li>Bags</li><li>Jewellery</li><li>Sunglasses</li><li>Belts</li><li>Head Wraps</li>
+        </ul>
+      </div>
+      <div class="bn-nav-item">Beauty
+        <ul class="bn-sub-list">
+          <li>Skincare</li><li>Makeup</li><li>Hair & Wigs</li><li>Body Care</li><li>Fragrances</li>
+        </ul>
+      </div>
+      <div class="bn-nav-item">Brands
+        <ul class="bn-sub-list">
+          <li>A–Z of Brands</li><li>Nigerian Labels</li><li>International</li><li>Premium</li>
+        </ul>
+      </div>
+      <div class="bn-nav-item">Sale
+        <ul class="bn-sub-list">
+          <li>Up to 50% off</li><li>Under ₦10,000</li><li>Under ₦25,000</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="bn-section-title" style="margin-top:1.5rem;">Main Nav — Men</p>
+    <div class="bn-nav-grid">
+      <div class="bn-nav-item">New In
+        <ul class="bn-sub-list">
+          <li>New Today</li><li>Selling Fast</li><li>Clothing</li><li>Shoes</li><li>Accessories</li>
+        </ul>
+      </div>
+      <div class="bn-nav-item">Clothing
+        <ul class="bn-sub-list">
+          <li>T-Shirts & Vests</li><li>Shirts</li><li>Hoodies & Sweats</li><li>Trousers & Chinos</li><li>Shorts</li><li>Jeans</li><li>Agbada & Kaftan</li><li>Activewear</li>
+        </ul>
+      </div>
+      <div class="bn-nav-item">Shoes
+        <ul class="bn-sub-list">
+          <li>Trainers</li><li>Loafers</li><li>Sandals</li><li>Smart Shoes</li><li>Boots</li>
+        </ul>
+      </div>
+      <div class="bn-nav-item">Accessories
+        <ul class="bn-sub-list">
+          <li>Caps & Hats</li><li>Bags & Backpacks</li><li>Sunglasses</li><li>Wallets</li><li>Watches</li>
+        </ul>
+      </div>
+      <div class="bn-nav-item">Grooming
+        <ul class="bn-sub-list">
+          <li>Fragrances</li><li>Skincare</li><li>Hair Care</li><li>Beard & Shave</li>
+        </ul>
+      </div>
+      <div class="bn-nav-item">Brands
+        <ul class="bn-sub-list">
+          <li>A–Z of Brands</li><li>Nigerian Labels</li><li>Streetwear</li><li>Premium</li>
+        </ul>
+      </div>
+      <div class="bn-nav-item">Sale
+        <ul class="bn-sub-list">
+          <li>Up to 50% off</li><li>Under ₦8,000</li><li>Under ₦20,000</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="bn-section">
+    <p class="bn-section-label">Homepage Sections</p>
+    <p class="bn-section-title">Section Copy — Women's Homepage</p>
+    <div class="bn-grid">
+      <div class="bn-card">
+        <p class="bn-card-title">Hero — Campaign Headline</p>
+        <p class="bn-card-body">"This is your season." / Sub: "New arrivals daily. Shop what's moving."</p>
+      </div>
+      <div class="bn-card">
+        <p class="bn-card-title">Vibe Selector</p>
+        <p class="bn-card-body">"What are you shopping for?" — Office Looks · Party Season · Casual Naija · Asoebi · Gym &amp; Active</p>
+      </div>
+      <div class="bn-card">
+        <p class="bn-card-title">New In Rail</p>
+        <p class="bn-card-body">"Just landed." / Sub: "Fresh styles, in before everyone else."</p>
+      </div>
+      <div class="bn-card">
+        <p class="bn-card-title">Trending Now</p>
+        <p class="bn-card-body">"The streets are talking." / Sub: "Pieces everyone's grabbing right now."</p>
+      </div>
+      <div class="bn-card">
+        <p class="bn-card-title">Occasion Edit</p>
+        <p class="bn-card-body">"Dressed for every moment." — Weddings · Owambe · Office · Date Night · Casual</p>
+      </div>
+      <div class="bn-card">
+        <p class="bn-card-title">Nigerian Labels</p>
+        <p class="bn-card-body">"Shop Nigerian. Support home." / Sub: "The best local designers, all in one place."</p>
+      </div>
+      <div class="bn-card">
+        <p class="bn-card-title">Under ₦10,000</p>
+        <p class="bn-card-body">"Soft life doesn't have to cost much." / Sub: "Real style. Real prices."</p>
+      </div>
+      <div class="bn-card">
+        <p class="bn-card-title">Style Feed CTA</p>
+        <p class="bn-card-body">"Need outfit ideas? Head to the Style Feed — looks, inspo, and what to wear this week."</p>
+      </div>
+    </div>
+
+    <p class="bn-section-title" style="margin-top:1.5rem;">Section Copy — Men's Homepage</p>
+    <div class="bn-grid">
+      <div class="bn-card">
+        <p class="bn-card-title">Hero — Campaign Headline</p>
+        <p class="bn-card-body">"Level up your look." / Sub: "Thousands of men's styles, delivered to you."</p>
+      </div>
+      <div class="bn-card">
+        <p class="bn-card-title">Vibe Selector</p>
+        <p class="bn-card-body">"Pick your vibe:" — Streetwear · Smart Casual · Agbada &amp; Kaftan · Active · Party</p>
+      </div>
+      <div class="bn-card">
+        <p class="bn-card-title">New In Rail</p>
+        <p class="bn-card-body">"Fresh drops." / Sub: "New styles added every day."</p>
+      </div>
+      <div class="bn-card">
+        <p class="bn-card-title">Most Wanted</p>
+        <p class="bn-card-body">"The ones moving fast." / Sub: "Top picks before they sell out."</p>
+      </div>
+      <div class="bn-card">
+        <p class="bn-card-title">Occasion Edit</p>
+        <p class="bn-card-body">"Dressed for every occasion." — Owambe · Corporate · Casual · Night Out · Traditional</p>
+      </div>
+      <div class="bn-card">
+        <p class="bn-card-title">Nigerian Labels</p>
+        <p class="bn-card-body">"Wear the culture." / Sub: "The best Nigerian menswear brands, curated."</p>
+      </div>
+      <div class="bn-card">
+        <p class="bn-card-title">Basics &amp; Essentials</p>
+        <p class="bn-card-body">"Wardrobe foundations done right." / Sub: "The pieces every guy needs."</p>
+      </div>
+      <div class="bn-card">
+        <p class="bn-card-title">Style Feed CTA</p>
+        <p class="bn-card-body">"Still figuring out your look? Check the Style Feed — outfit ideas, brand guides, and what's trending."</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="bn-section">
+    <p class="bn-section-label">Category Page Copy</p>
+    <p class="bn-section-title">SEO + Page Descriptions</p>
+    <div class="bn-grid">
+      <div class="bn-card">
+        <p class="bn-card-title">Women's Clothing</p>
+        <p class="bn-card-body">"Shop women's clothing on Boldnook — tops, dresses, co-ords, asoebi and more. New styles drop daily, with sizes for every body and delivery across Nigeria."</p>
+      </div>
+      <div class="bn-card">
+        <p class="bn-card-title">Men's Clothing</p>
+        <p class="bn-card-body">"Shop men's fashion on Boldnook — tees, shirts, chinos, traditional wear and streetwear. Hundreds of brands, real prices, delivered anywhere in Nigeria."</p>
+      </div>
+      <div class="bn-card">
+        <p class="bn-card-title">Asoebi &amp; Occasion</p>
+        <p class="bn-card-body">"Wedding? Owambe? Graduation? Shop Boldnook's occasion edit — everything you need to show up and show out."</p>
+      </div>
+      <div class="bn-card">
+        <p class="bn-card-title">Agbada &amp; Kaftan</p>
+        <p class="bn-card-body">"Dress in your culture. Shop premium Agbada, Kaftan, and Dashiki — modern cuts, quality fabrics, made to be remembered."</p>
+      </div>
+      <div class="bn-card">
+        <p class="bn-card-title">Trainers &amp; Footwear</p>
+        <p class="bn-card-body">"The freshest trainers, sandals, loafers and more — shop footwear on Boldnook and step right every single day."</p>
+      </div>
+      <div class="bn-card">
+        <p class="bn-card-title">Beauty</p>
+        <p class="bn-card-body">"Skincare, makeup, wigs and body care — shop beauty on Boldnook. Products that work for melanin-rich skin, curated for you."</p>
+      </div>
+      <div class="bn-card">
+        <p class="bn-card-title">Nigerian Labels</p>
+        <p class="bn-card-body">"Support Nigerian fashion. Shop the best homegrown designers and brands — from Lagos streetwear to Abuja luxury, all on Boldnook."</p>
+      </div>
+      <div class="bn-card">
+        <p class="bn-card-title">Sale</p>
+        <p class="bn-card-body">"Big brands. Better prices. Shop Boldnook Sale — up to 50% off with new styles added every week. Don't sleep."</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="bn-section">
+    <p class="bn-section-label">Campaign & Seasonal Copy</p>
+    <p class="bn-section-title">Nigerian Calendar Campaigns</p>
+    <div class="bn-grid">
+      <div class="bn-card">
+        <p class="bn-card-title">Owambe Season</p>
+        <p class="bn-card-body">"It's owambe season. Don't show up anyhow." / CTA: "Shop the Party Edit"</p>
+      </div>
+      <div class="bn-card">
+        <p class="bn-card-title">Detty December</p>
+        <p class="bn-card-body">"Detty December is loading. Dress like you know." / CTA: "Get December-Ready"</p>
+      </div>
+      <div class="bn-card">
+        <p class="bn-card-title">Back to School</p>
+        <p class="bn-card-body">"New term, new fits. Fresh styles for students — NYSC, uni, and beyond." / CTA: "Shop Student Picks"</p>
+      </div>
+      <div class="bn-card">
+        <p class="bn-card-title">Val's Day</p>
+        <p class="bn-card-body">"Dress like you mean it this February 14th." / CTA: "Shop Valentine's Edit"</p>
+      </div>
+      <div class="bn-card">
+        <p class="bn-card-title">Independence Day</p>
+        <p class="bn-card-body">"Wear the green and white with pride. Shop Nigeria's colours." / CTA: "Shop Oct 1st Looks"</p>
+      </div>
+      <div class="bn-card">
+        <p class="bn-card-title">Payday Weekend</p>
+        <p class="bn-card-body">"Alert don enter. Time to treat yourself." / CTA: "Shop Now — You Deserve It"</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="bn-section">
+    <p class="bn-section-label">Trust & Utility Copy</p>
+    <p class="bn-section-title">Policy & Checkout Pages</p>
+    <div class="bn-grid">
+      <div class="bn-card">
+        <p class="bn-card-title">Delivery Promise</p>
+        <p class="bn-card-body">"We deliver nationwide — Lagos, Abuja, Port Harcourt, Kano, Ibadan, and everywhere in between. Tracked. Trusted."</p>
+      </div>
+      <div class="bn-card">
+        <p class="bn-card-title">Returns Policy</p>
+        <p class="bn-card-body">"Not your size? Changed your mind? No wahala. Return it within 30 days — simple, no drama."</p>
+      </div>
+      <div class="bn-card">
+        <p class="bn-card-title">Payment Options</p>
+        <p class="bn-card-body">"Pay with Paystack, Flutterwave, bank transfer or USSD. No card? No problem — we've got options."</p>
+      </div>
+      <div class="bn-card">
+        <p class="bn-card-title">Empty Cart</p>
+        <p class="bn-card-body">"Your bag is empty. That's not a vibe — let's fix that."</p>
+      </div>
+      <div class="bn-card">
+        <p class="bn-card-title">Order Confirmation</p>
+        <p class="bn-card-body">"Order confirmed! We're already packaging your items. You'll get a tracking update shortly — sit back, your fit is on the way."</p>
+      </div>
+      <div class="bn-card">
+        <p class="bn-card-title">Size Guide CTA</p>
+        <p class="bn-card-body">"Not sure of your size? Use our Naija Size Guide — we've mapped UK, US, and EU sizes to what actually fits."</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="bn-section">
+    <p class="bn-section-label">Footer Copy</p>
+    <p class="bn-section-title">Footer Sections</p>
+    <div class="bn-grid">
+      <div class="bn-card">
+        <p class="bn-card-title">Help & Info</p>
+        <p class="bn-card-body">Help Centre · Track My Order · Delivery Info · Returns · Sizing Guide · Student Discount</p>
+      </div>
+      <div class="bn-card">
+        <p class="bn-card-title">About Boldnook</p>
+        <p class="bn-card-body">About Us · Careers · Press · Sell on Boldnook · Become a Partner Brand</p>
+      </div>
+      <div class="bn-card">
+        <p class="bn-card-title">More From Us</p>
+        <p class="bn-card-body">Download the App · Gift Cards · Style Feed · Boldnook Rewards · Refer a Friend</p>
+      </div>
+      <div class="bn-card">
+        <p class="bn-card-title">Footer Tagline</p>
+        <p class="bn-card-body">"Boldnook — Dress how you move. © 2025 Boldnook Ltd. Made in Nigeria."</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="bn-section">
+    <p class="bn-section-label">Boldnook Originals</p>
+    <p class="bn-section-title">In-House Label Copy</p>
+    <div class="bn-copy-block">
+      <p><span class="bn-highlight">Boldnook Studio</span> — "Our own label. Born in Lagos, designed for every day. No fuss, no fluff — just clean cuts and real quality at honest prices."</p>
+    </div>
+    <div class="bn-copy-block" style="margin-top:0.75rem;">
+      <p><span class="bn-highlight">Boldnook Basics</span> — "The wardrobe foundation. T-shirts, tanks, shorts, socks — the pieces you reach for first, finally done right."</p>
+    </div>
+    <div class="bn-copy-block" style="margin-top:0.75rem;">
+      <p><span class="bn-highlight">Boldnook Active</span> — "For the runs, the gym, the pitch. Performance wear that keeps up with you — whether you're training or just giving the impression."</p>
+    </div>
+  </div>
+
+</div>
